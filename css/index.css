@@ -1,0 +1,13 @@
+#topNav{ width: 1000px; height: 42px; margin: 50px auto;}
+#search{ width: 540px; height: 30px; float: left;border: 1px solid #3FA5FF;border-radius: 5px; padding: 5px 15px 5px 15px; box-shadow: 1px 1px 3px #9DD1EB;}
+
+#showTime{ width: 380px;height: 30px; float: right; border: 1px solid #3FA5FF;border-radius: 5px; padding: 5px 15px 5px 15px; box-shadow: 1px 1px 3px #9DD1EB;}
+#ditDateA{ width: 200px; height: 30px; float: left;}
+#ditTimeA{ width: 160px; height: 30px; float: right;}
+.dit{ width: 20px; height: 30px; background-image: url("dig.png"); float: left;}
+.heng{ background-position: 0 -300px;}
+.mao{ background-position: 0 -330px;}
+
+#main{ width: 1000px;height: auto;min-height: 600px; margin: 10px auto;border: 1px solid #ccc;border-radius: 5px; padding-top:20px; box-shadow: 1px 1px 20px #444;}
+.mianContent{width: 198px;height: 148px; border: 1px solid #ccc;margin:20px 10px 0px 30px;border-radius: 8px;float: left; cursor: pointer;}
+.mianCLink{ width: 180px; height: 50px; line-height: 50px; display: block;text-align: center;font-family: 微软雅黑,Arial; font-size: 30px; color: #4894C8;text-decoration: none; margin:40px auto; }

@@ -1,0 +1,98 @@
+﻿/*顶部导航栏*/
+#header{ width: 100%; height: 42px;background-image: url("images/headbg.png"); background-repeat: repeat-x;position: fixed;}
+#headInner{ width: 1005px; height: 41px; margin: auto;}
+#kxLogo{width: 99px; height: 30px; margin: 5px 31px 0 10px; float:left;background-image:url("images/kx-logo.png"); }
+#topNav{ width: 200px; height: 40px; margin-bottom: 1px;float: right;}
+.hasSub{width: 34px; height: 40px;float: right; margin: 0 2px;}
+.topTxtA{ width: 34px; height: 40px; display: block;line-height: 40px;font-family: 宋体,Arial; font-size: 12px; color:#FAD9DB;text-align: center;}
+.topTxtA:hover{ width:32px;border-left: 1px solid #eb4953; border-right: 1px solid #eb4953;color: #fff; background-color: #eb4953;box-shadow: 1px 0px #eb4953; }
+#topTxt4{position: relative;}
+#topNavHide{display: none;  width: 201px; height: 216px; border: 1px solid rgb(155,155,155); border-top: 0px; position: absolute; right: 0; top: 40px; z-index: 2; background-color: #fff;}
+.topNavHideUl{width: 100px; height: 216px;}
+#topNavMore1{float: left; border-right: 1px solid #ccc;}
+#topNavMore2{ float: right;border: 0;}
+#topNavHide a{width: 65px; height: 27px;display: block;line-height: 27px;padding-left: 35px;text-align: left; font-size: 12px; font-family: 宋体,Arial;color: #333;background-image: url("images/spt_head_16.png");background-repeat: no-repeat; }
+#topNavHide a:hover{background-color: #eb4b55;}
+/*顶部导航栏  end*/
+
+
+/*主内容*/
+#mainContent{ width: 100%; height: auto;min-height: 525px;padding-top: 40px; }
+#mian{width: 885px;height: 525px; padding: 45px 60px; margin:25px auto;margin-bottom: 5px; border: 1px solid #E0E0E0;border-radius: 8px;box-shadow: 0 0 3px #eaeaea; background-image: url("images/bg_reg_conmain.png"); background-position: 610px 50px;background-repeat: no-repeat;}
+#mainLeft{ width: 540px; height: 525px; padding: 0 15px 0 10px;float: left;}
+#mainLeftTitle{ width: 540px; height:33px; margin: 9px 0 27px -2px; font-size: 22px; line-height: 33px; color: #333;font-family: 微软雅黑;display: block;}
+#mainLeftSelect{ width: 540px; height: 33px; margin-bottom:20px;}
+#mainSelContent{ width: 246px; height: 32px; float: left; border-bottom: 1px solid #D9DCE2;}
+.mainSelA{ width: 118px; height: 31px;line-height: 31px; border: 1px solid #EEEEEE;  border-bottom: 0;display: block;background-color: #fff;font-family:宋体,Arial;border-top-left-radius: 3px;border-top-right-radius: 3px;text-align: center;font-size: 14px; color: #333;text-align: center;}
+#secEmail{ float: left;}
+#secPhone{float: right;}
+.secOn{ font-weight: bold;border: 1px solid #D9DCE2;border-bottom: 1px solid #fff;font-family: 宋体,Arial;}
+
+#regForm{ width: 540px; height: 403px; }
+.regBox{width: 540px; height: 403px;color: #333;font-size: 14px;}
+.accounts{ width: 540px; height: 48px; margin-bottom: 15px;}
+.regFLabel{ width: 70px; height: 17px;margin:6px 5px 0 0;float: left; line-height: 17px;text-align: justify;}
+.regElement{width: 240px; height: 48px;float: left;}
+.inpBox{width: 240px;height: 27px; border: 1px solid #B2BBCD;margin-bottom: 4px;display: block;}
+.mainTxt{ width: 240px; height: 17px; line-height: 17px;font-size: 14px;margin-top:5px; border: 0;}
+.regClue{ width: 240px; height: 13px;display: block;padding-top: 2px;color: #999; font-size:12px;}
+
+.password{ height: 33px;}
+.regElement2{height: 25px;}
+.sing{height: 25px;margin-bottom: 10px;}
+.vm{margin-top: 10px;display: block;float: left;}
+.regLabWidth{ width: 77px; height: 27px; margin-left: 3px;margin-right: 5px;}
+.regLabWidth1{width: 60px;}
+.regElement2 label{display: block;float: left; }
+
+.regSel1{ width: 60px; height: 27px; display: block;float: left;margin-right: 2px;}
+.regSel2{ width: 40px;}
+.vm1{margin-top: 5px;}
+.vm2{width: 60px; height: 27px; margin-left: 3px;}
+
+.followEmail{width: 427px; height: 19px;margin-top: -12px; margin-bottom: 19px; padding-left: 75px;}
+.checkBox{display: block;float: left;}
+.regClue1{color: #333;display: block;float: left;}
+.regBT{ width: 428px; height: 58px; padding-left: 75px; margin: -4px 0 15px 0;}
+.btnRegBox{width: 175px; height: 38px;display: block;float: left;margin-top: 10px; background-image: url("images/spr_reg.png");background-position: -1px 1px;line-height: 38px; font-size: 14px; font-family: 宋体;color: #fff;text-align: center;font-weight: bold;cursor: pointer;}
+
+
+#mainRight{width: 280px; height: 525px;padding: 24px 0 0 40px; float: right;}
+#mainRight span{width: 280px; font-size: 14px; font-family: 宋体,Arial;color: #666;line-height: 25px;text-align: left;display: block; }
+.mainSpan1A{color:#369;}
+.mainSpan1A:hover{color:#259;text-decoration: underline;}
+#mainRSpan1{ margin-bottom: 30px;}
+#mainRSpan2{ font-weight: bold;}
+#download{ width: 164px; height: 52px;display: block;background-image: url("images/btnKxClientDownload.png"); margin-top:10px;}
+#oneLineBar{ width: 310px; height: 1px; margin: 30px 0 30px -30px;background-image: url("images/oneLineBar.png");}
+#twoDimensionCode{ width: 100px; height: 100px; padding: 10px; display: block;margin-top: 10px;background-image: url("images/twoDimensionCode3.png");background-size: 100px 100px;background-position: 50% 50%; background-repeat: no-repeat; border: 1px solid #EEE;}
+
+#regFormEmail{}
+#regFormPhone{display: none;}
+/*主内容   end*/
+
+#footer{ width: 1004px; height: 99px;padding-bottom: 50px; margin: auto;}
+#footerNav{ width: 1004px; height: 40px;}
+#footNavLeft{width: auto; min-width: 24px; height: 40px; float: left;}
+#footNavLeft a{color: #369; font-family: 宋体,Arial;font-size: 12px; display: inline-block;margin-right: 10px;line-height: 40px;}
+#footNavLeft a:hover{ color: #259; text-decoration: underline;}
+#footNavRight{ display: block;float: right;width: 80px; height: 40px; font-family:tahoma,helvetica,arial;font-size: 12px;line-height: 40px;color: #999;}
+#footerInfo{ width: 1004px; height: 56px; background-color: #F0EFEF;text-align: center;padding-top: 3px;}
+.footerInfoA{ display:inline-block;font-family:宋体,Arial;font-size: 12px;color: #999;line-height: 26px; margin-right: 15px;  }
+#footReport{width: 1004px; height: 24px;}
+#footerLogo{ width: 24px;height:24px;background-image: url("images/footreport.png");  float: left;margin-right: 2px;}
+.footA1{margin-right:0px; line-height: 24px;}
+
+
+#backTop{width: 35px; height: 35px; position: fixed;right: 131px; left: 1183px;bottom: 5px; }
+#backTop a{ display: block;width: 35px; height: 35px;background-image: url("images/backtop2.png");}
+
+
+
+
+
+
+
+
+
+
