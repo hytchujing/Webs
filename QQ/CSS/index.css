@@ -207,7 +207,33 @@
 #peopleLPic2:hover{background-position: -90px -260px;}
 
 #lm2R3WeLovContentAll{ width: 320px; height:792px;}
-.lm2R3WeLovContent{width: 318px; height:264px; border: 1px solid #ccc; }
+.lm2R3WeLovContent{width: 318px; height:787px;}
+#rightArea3Content1{width: 100%; height: 264px;}
+#rightArea3Content2{width:100%;height:264px;}
+#rightArea3Content3{width:100%;height:264px;}
+
+.rightArea3Content11{ width: 318px; height: 21px; position: relative; }
+.rightArea3Content11 span{ position: absolute; left: 10px; width: 60px; height: 20px; line-height: 20px; background-image: url("images/qqbg_1.5.5.png"); background-position: -800px -110px; float: left;}
+.Square1{ position: absolute; left: -4px; top: 6px; width: 7px; height: 8px; background-image:url("images/qqbg_1.5.5.png"); background-position: -800px -210px; }
+
+.rightArea3Content111 span{ background-position: -900px -110px;}
+.square2{ background-position: -800px -230px;}
+
+.rightArea3Content12{ width: 295px; height: 230px; margin-left: 12px; }
+.rightArea3C12Title{ text-align: left; font-size: 14px; line-height: 28px; color: rgb(102, 102, 102); text-decoration: none;}
+.rightArea3C12Title:hover{ color: red; text-decoration: underline;}
+.rightArea3C12Content{ width: 288px; height: 60px; margin:5px 0;}
+.rightArea3C12ContentA1{ display: block; width:90px; height:60px; float: left; }
+.rightArea3C12ContentA2{ display: block; width:186px; height:60px; float: right; line-height: 20px; font-size: 12px; color: rgb(102, 102, 102); text-decoration: none;}
+.rightArea3C12ContentA2:hover{ text-decoration: underline; }
+
+.rightArea3C12Foot{ width: 310px; height: 20px;}
+.rightArea3C12FootA{ width: 150px; height: 20px; line-height: 20px; float: left;}
+.rightArea3C12FootD{ width: 100px; height: 20px; float: right;}
+.rightArea3C12Foot a{ color: rgb(102, 102, 102); text-decoration: none;}
+.rightArea3C12FootD a:hover{ font-size: 12px; color: red; text-decoration: underline;}
+.rightArea3ContentMoren{ display: none; }
+.rightArea3ContentCurrent{ display: block;}
 
 /*大家爱看 end*/
 
@@ -278,15 +304,11 @@
 #lm9Left{width: 660px;height: 330px;float:left;}
 #lm9LeftLeft{ width: 320px; height: 330px; float: left;}
 #lm9LeftRight{width: 320px; height: 330px; float: right;}
+#lm9Right{float: right; width: 320px; height: 330px;}
 
 
-#lm9Right{width: 320px;height: 330px;float:right; border: 1px solid rgb(210, 225, 241);}
-#lm9RTaoTitle{ width: 318px; height: 80px;background-image: url("images/T1jP_OXlReXXc2sMna-6-80.gif");background-repeat: repeat-x;}
-#taoTitle1{ width: 80px; height: 80px; float: left;}
-#taoTitle2{ width: 234px; height: 80px; float: right;}
 
-#lm9RTaoContent{width: 318px; height: 80px;}
-.taoConLeRi{}
+
 /*lm9新闻区 end*/
 
 /*lm10新闻区*/
@@ -351,3 +373,6 @@
 .fooLinDes{width: 60px; height: 38px; font-family: 宋体,Arial;font-size: 12px;line-height: 20px; color: #515151; padding:5px 9px 0 3px;display: block;float: right;text-align: center;}
 .fooLinDes:hover{ color: #BD0A01;text-decoration: underline;}
 /*页脚 end*/
+
+
+
