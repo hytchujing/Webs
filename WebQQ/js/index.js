@@ -121,7 +121,7 @@ $(function(){	//alert("123");
 		});
 
 	//弹出聊天框
-	
+	TCchatArea();
 
 });
 
@@ -151,7 +151,84 @@ function BgChangeRight(){
 
 //弹出聊天框
 function TCchatArea(){
+	$(".chatA").click(function(){
+		var talkid=$(this).attr("talkid");
+		var cAname=$(this).attr("cafName");
+		var isappear = $(this).attr("isappear");
+		if(isappear=="yes"){
+			$("#"+talkid).show();
+			$(".qqChat").css("z-index","10");
+			$("#"+talkid).css("z-index","12");
+			return;
+		}
+		
+		var chatHtml = '';
+		
+		chatHtml+='	<!--聊天框-->';
+		chatHtml+='	<div id="'+ talkid +'" class="qqChat">';
+		chatHtml+='		<div class="chatTitle">';
+		chatHtml+='			<div class="chatMenu">';
+		chatHtml+='				<p></p>';
+		chatHtml+='			</div>';
+		chatHtml+='			<div class="chatFriendName">'+ cAname +'</div>';
+		chatHtml+='			<div class="chatClose">';
+		chatHtml+='				<span>关闭</span>';
+		chatHtml+='			</div>';
+		chatHtml+='		</div>';
+		chatHtml+='		<div class="chatHistory">';
+		chatHtml+='			<!--下拉菜单-->';
+		chatHtml+='			<ul class="TcTab" isShow="false">';
+		chatHtml+='				<li class="TcTabLi">';
+		chatHtml+='					<p class="TcTPic t01"></p>';
+		chatHtml+='					<span class="TcTWord">群成员</span>';
+		chatHtml+='				</li>';
+		chatHtml+='				<li class="TcTabLi">';
+		chatHtml+='					<p class="TcTPic t02"></p>';
+		chatHtml+='					<span class="TcTWord">群资料</span>';
+		chatHtml+='				</li>';
+		chatHtml+='				<li class="TcTabLi">';
+		chatHtml+='					<p class="TcTPic t03"></p>';
+		chatHtml+='					<span class="TcTWord">聊天记录</span>';
+		chatHtml+='				</li>';
+		chatHtml+='			</ul>';
+		chatHtml+='			<!--下拉菜单  end-->';
+		chatHtml+='			';
+		chatHtml+='		</div>';
+		chatHtml+='		<div class="chatControl"></div>';
+		chatHtml+='	</div>';
+		chatHtml+='	<!--聊天框  end-->';
 
+		$("body").append(chatHtml);
+		$(this).attr("isappear","yes");
+		$(".qqChat").css("z-index","10");
+		$("#"+talkid).css("z-index","12");
+
+
+		//最近聊天的人在最上面
+		$(".qqChat").click(function(){
+			$(".qqChat").css("z-index","10");
+			$(this).css("z-index","12");
+		});
+
+
+		
+		
+		//出现在随机的位置
+		var ranleft= (Math.random()+5)*100;
+		var rantop= Math.random()*30;
+		$("#"+talkid).css({
+			"left":ranleft+"px",
+			"top":rantop+"px"
+		});
+
+
+
+		//关闭聊天框
+		$(".chatClose").click(function(){
+			$(this).parent().parent().hide();
+		});
+
+	});
 
 
 }

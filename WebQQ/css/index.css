@@ -130,7 +130,7 @@ body{background-image:url("images/bodyBg1.jpg");}
 
 
 /*聊天框*/
-.qqChat{width: 700px;height: 500px;margin:80px 0 0 20px;float: left; border-radius: 7px;box-shadow: 2px 2px 6px rgba(0,0,0,0.7); border: 1px solid #444;}
+.qqChat{width: 700px;height: 500px;margin:80px 150px 0 0; border-radius: 7px;box-shadow: 2px 2px 6px rgba(0,0,0,0.7); border: 1px solid #444;position: absolute;}
 .chatTitle{width:700px; height:46px;background:linear-gradient(#555, #222) ;border-top-left-radius: 7px;border-top-right-radius: 7px;  }
 .chatMenu{ width: 49px; height: 20px; padding:6px 19px; float: left;margin: 5px 0 7px 15px;cursor: pointer; border: 1px solid #333; border-radius: 5px; background:linear-gradient(#222, #555) ;}
 .chatMenu p{width: 14px; height: 14px; background-image: url("images/TalkTop01.png");display: block;background-size: 100% 100%;margin-top: 3px; }
