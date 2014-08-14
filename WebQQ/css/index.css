@@ -31,10 +31,6 @@ body{background-image:url("images/bodyBg1.jpg");}
 #firendArea{ width: 280px; height: 500px;background-color: #fff;border-radius: 7px;box-shadow: 2px 2px 6px rgba(0,0,0,0.7);}
 .friendAll{ width: 280px; height: 450px;}
 .disnone{display: none;}
-#huihua{}
-#lianxiren{}
-#faxian{}
-#shezhi{}
 
 /*会话*/
 .fATitle{ width: 230px; height:20px; padding: 13px 25px; text-align: center;color: #fff;background:linear-gradient(#555, #222) ;border-top-left-radius: 7px;border-top-right-radius: 7px; }
@@ -133,4 +129,27 @@ body{background-image:url("images/bodyBg1.jpg");}
 /*底部  end*/
 
 
-/**/
+/*聊天框*/
+.qqChat{width: 700px;height: 500px;margin:80px 0 0 20px;float: left; border-radius: 7px;box-shadow: 2px 2px 6px rgba(0,0,0,0.7); border: 1px solid #444;}
+.chatTitle{width:700px; height:46px;background:linear-gradient(#555, #222) ;border-top-left-radius: 7px;border-top-right-radius: 7px;  }
+.chatMenu{ width: 49px; height: 20px; padding:6px 19px; float: left;margin: 5px 0 7px 15px;cursor: pointer; border: 1px solid #333; border-radius: 5px; background:linear-gradient(#222, #555) ;}
+.chatMenu p{width: 14px; height: 14px; background-image: url("images/TalkTop01.png");display: block;background-size: 100% 100%;margin-top: 3px; }
+.chatFriendName{width: 450px; height: 19px; padding: 13px 20px 13px 20px; float: left;color: #fff; text-align: center;font-size: 18px; line-height: 19px; }
+.chatClose{float: right; margin:5px 15px 07px 0;width: 49px; height: 20px; padding:6px 19px;cursor: pointer; border: 1px solid #333; border-radius: 5px; background:linear-gradient(#222, #555) ;}
+.chatClose span{ display: block;width: 49px; height: 20px; font-size: 16px; line-height: 20px; text-align: center;color: #fff; }
+
+.chatHistory{ width: 700px; height:404px;background: rgba(0,0,0,0.2); }
+.TcTab{ display: none; width: 700px; height: 80px;box-shadow: 0 2px 5px #141111;background-color: #3c3c3c;}
+.TcTabLi{ width: 80px; height:80px;display: block;float: left;cursor: pointer;background:  linear-gradient(#4E4E4E, #2C2C2C);border-left: 1px solid #555; border-right: 1px solid #222; }
+.TcTPic{ width: 40px; height: 40px; display: block;background-repeat: no-repeat; background-image: url("images/menu_icons.png"); margin: 10px 20px 0px;}
+.t01{background-position: 0px 2px;}
+.t02{ background-position: -43px 2px;}
+.t03{background-position: -90px 2px;}
+
+.TcTWord{ color: #fff;text-align: center;display: inline-block;width: 100%; font-size: 12px;}
+
+
+
+
+.chatControl{ width: 700px; height:50px; background:linear-gradient(#555, #222) ;border-bottom-left-radius: 7px;border-bottom-right-radius: 7px;  }
+/*聊天框  end*/

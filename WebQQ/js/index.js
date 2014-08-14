@@ -106,6 +106,20 @@ $(function(){	//alert("123");
 		}
 	});
 
+
+	//下拉菜单
+	$(document).on("click", ".chatMenu", function () {				
+			var isshow = $(this).parent().next().find(".TcTab").attr("isShow");			
+			if(isshow == "false"){
+				$(this).parent().next().find(".TcTab").css("display","block");
+				$(this).parent().next().find(".TcTab").attr("isShow","true");
+			}
+			else{
+				$(this).parent().next().find(".TcTab").css("display","none");
+				$(this).parent().next().find(".TcTab").attr("isShow","false");
+			}
+		});
+
 	//弹出聊天框
 	
 
@@ -136,3 +150,9 @@ function BgChangeRight(){
 
 
 //弹出聊天框
+function TCchatArea(){
+
+
+
+}
+//弹出聊天框  end
