@@ -15,6 +15,7 @@
 				<a class="myHeadImg" href="#">
 					<img src="images/headImages/myHeadImg.jpg">
 				</a>
+				<span id="myHeadImhState" class="main_icon online_icon SZIcon"></span>
 				<div class="myIinfoDes" >
 					<span class="myNicName">千冥静</span>
 					<span class="mySuoshuo">烟花一瞬，爱开一生！</span>
@@ -42,7 +43,7 @@
 					<span>会话</span>
 				</div>
 				<ul class="fAContent">
-					<li class="chatA">
+					<li class="chatA" isappear="no" talkid="f01" cafName="冯莹">
 						<a class="chatAHeadImg" href="#">
 							<img src="images/headImages/head01.jpg">
 						</a>
@@ -51,7 +52,7 @@
 							<span class="chatNicName">（Van）</span>
 						</div>
 					</li>
-					<li class="chatA">
+					<li class="chatA" isappear="no" talkid="f03" cafName="黄洪飞">
 						<a class="chatAHeadImg" href="#">
 							<img src="images/headImages/head02.jpg">
 						</a>
@@ -60,7 +61,7 @@
 							<span class="chatNicName">（黄）</span>
 						</div>
 					</li>
-					<li class="chatA">
+					<li class="chatA" isappear="no" talkid="f04" cafName="黄院长">
 						<a class="chatAHeadImg" href="#">
 							<img src="images/headImages/head03.jpg">
 						</a>
@@ -69,7 +70,7 @@
 							<span class="chatNicName">（tl）</span>
 						</div>
 					</li>
-					<li class="chatA">
+					<li class="chatA" isappear="no" talkid="f04" cafName="韦书记">
 						<a class="chatAHeadImg" href="#">
 							<img src="images/headImages/head04.jpg">
 						</a>
@@ -78,7 +79,7 @@
 							<span class="chatNicName">（善哉）</span>
 						</div>
 					</li>
-					<li class="chatA">
+					<li class="chatA" isappear="no" talkid="c01" cafName="杜雅林">
 						<a class="chatAHeadImg" href="#">
 							<img src="images/headImages/head05.jpg">
 						</a>
@@ -87,7 +88,7 @@
 							<span class="chatNicName">（Dream）</span>
 						</div>
 					</li>
-					<li class="chatA">
+					<li class="chatA" isappear="no" talkid="c02" cafName="丁满意">
 						<a class="chatAHeadImg" href="#">
 							<img src="images/headImages/head06.jpg">
 						</a>
@@ -96,7 +97,7 @@
 							<span class="chatNicName">（丁满意）</span>
 						</div>
 					</li>
-					<li class="chatA">
+					<li class="chatA" isappear="no" talkid="c03" cafName="孙权">
 						<a class="chatAHeadImg" href="#">
 							<img src="images/headImages/head07.jpg">
 						</a>
@@ -105,7 +106,7 @@
 							<span class="chatNicName">（权）</span>
 						</div>
 					</li>
-					<li class="chatA">
+					<li class="chatA" isappear="no" talkid="c04" cafName="许明星">
 						<a class="chatAHeadImg" href="#">
 							<img src="images/headImages/head04.jpg">
 						</a>
@@ -118,34 +119,34 @@
 			</div>
 			<!-- 会话  end-->
 			<!-- 联系人-->
-			<div id="lianxiren" class="friendAll">
+			<div id="lianxiren" class="friendAll disnone">
 				<div class="fATitle">
 					<span>联系人</span>
 				</div>
 				<div class="fBContent">
 					<!--标题分组  好友/群/讨论组-->
 					<ul class="lxrChatKind">
-						<li class="lxrChatKindLi lxrChatKindOn">
+						<li class="lxrChatKindLi lxrChatKindOn" upid="lxrFriendContent">
 							<span class="lxrChatKindLA">好友</span>
 						</li>
-						<li class="lxrChatKindLi">
+						<li class="lxrChatKindLi" upid="lxrGroupContent">
 							<span class="lxrChatKindLA">群</span>
 						</li>
-						<li class="lxrChatKindLi">
+						<li class="lxrChatKindLi" upid="lxrTalkContent">
 							<span class="lxrChatKindLA">讨论组</span>
 						</li>
 					</ul>
 					<!--好友-->
-					<ul id="lxrFriendContent" class="lxrFCList disnone">
+					<ul id="lxrFriendContent" class="lxrFCList ">
 						<li class="lxrLi">
 							<div class="lxrLiA">
 								<p class="lxrLiPic"></p>
 								<span class="lxrGroupName">我的好友</span>
 								<span class="lxrGroupNo">2/3</span>
 							</div>
-							<ul class="lxrLiDes">
+							<ul isShow="no" class="lxrLiDes disnone">
 								<li>
-									<div class="chatA lxrLiDesA">
+									<div class="chatA lxrLiDesA" isappear="no" talkid="c02" cafName="丁满意">
 										<a class="chatAHeadImg" href="#">
 											<img src="images/headImages/head06.jpg">
 										</a>
@@ -156,7 +157,7 @@
 									</div>
 								</li>
 								<li>
-									<div class="chatA lxrLiDesA">
+									<div class="chatA lxrLiDesA" isappear="no" talkid="c04" cafName="许明星">
 										<a class="chatAHeadImg" href="#">
 											<img src="images/headImages/head04.jpg">
 										</a>
@@ -167,7 +168,7 @@
 									</div>
 								</li>
 								<li>
-									<div class="chatA lxrLiDesA">
+									<div class="chatA lxrLiDesA" isappear="no" talkid="f01" cafName="冯莹">
 										<a class="chatAHeadImg" href="#">
 											<img src="images/headImages/head01.jpg">
 										</a>
@@ -185,9 +186,9 @@
 								<span class="lxrGroupName">1103班同学</span>
 								<span class="lxrGroupNo">9/18</span>
 							</div>
-							<ul class="lxrLiDes">
+							<ul isShow="no" class="lxrLiDes disnone" >
 								<li>
-									<div class="chatA lxrLiDesA">
+									<div class="chatA lxrLiDesA" isappear="no" talkid="c02" cafName="丁满意">
 										<a class="chatAHeadImg" href="#">
 											<img src="images/headImages/head06.jpg">
 										</a>
@@ -198,7 +199,7 @@
 									</div>
 								</li>
 								<li>
-									<div class="chatA lxrLiDesA">
+									<div class="chatA lxrLiDesA" isappear="no" talkid="c04" cafName="许明星">
 										<a class="chatAHeadImg" href="#">
 											<img src="images/headImages/head04.jpg">
 										</a>
@@ -209,7 +210,7 @@
 									</div>
 								</li>
 								<li>
-									<div class="chatA lxrLiDesA">
+									<div class="chatA lxrLiDesA" isappear="no" talkid="f01" cafName="冯莹">
 										<a class="chatAHeadImg" href="#">
 											<img src="images/headImages/head01.jpg">
 										</a>
@@ -224,7 +225,7 @@
 					</ul>
 					<!--群-->
 					<ul id="lxrGroupContent" class="lxrFCList disnone">
-						<li class="chatA lxrQunLi">
+						<li class="chatA lxrQunLi" isappear="no" talkid="q01" cafName="1103~淮师计科">
 							<a class="qunHeadImg" href="#">
 								<img src="images/headImages/qunHeadImg.jpg">
 							</a>
@@ -232,7 +233,7 @@
 								<span class="chartName">1103~淮师计科</span>
 							</div>
 						</li>
-						<li class="chatA lxrQunLi">
+						<li class="chatA lxrQunLi" isappear="no" talkid="q02" cafName="计科院学生会">
 							<a href="#" class="qunHeadImg">
 								<img src="images/headImages/qunHeadImg.jpg">
 							</a>
@@ -242,21 +243,29 @@
 						</li>
 					</ul>
 					<!--讨论组-->
-					<ul id="lxrTalkContent" class="lxrFCList">
-						<li class="chatA lxrQunLi">
+					<ul id="lxrTalkContent" class="lxrFCList disnone">
+						<li class="chatA lxrQunLi" isappear="no" talkid="q03" cafName="写意天下">
 							<a class="qunHeadImg" href="#">
 								<img src="images/headImages/discu_avatar.png">
 							</a>
 							<div class="chatAInfoDes">
-								<span class="chartName">1103~淮师计科</span>
+								<span class="chartName">写意天下</span>
 							</div>
 						</li>
-						<li class="chatA lxrQunLi">
+						<li class="chatA lxrQunLi" isappear="no" talkid="q04" cafName="真红玫瑰">
 							<a href="#" class="qunHeadImg">
 								<img src="images/headImages/discu_avatar.png">
 							</a>
 							<div class="chatAInfoDes">
-								<span class="chartName">计科院学生会</span>
+								<span class="chartName">真红玫瑰</span>
+							</div>							
+						</li>
+						<li class="chatA lxrQunLi" isappear="no" talkid="q05" cafName="11级计科">
+							<a class="qunHeadImg" href="#">
+								<img src="images/headImages/discu_avatar.png">
+							</a>
+							<div class="chatAInfoDes">
+								<span class="chartName">11级计科</span>
 							</div>
 						</li>
 					</ul>
@@ -264,7 +273,7 @@
 			</div>
 			<!-- 联系人 end-->
 			<!-- 发现-->
-			<div id="faxian" class="friendAll">
+			<div id="faxian" class="friendAll disnone">
 				<div class="fATitle">
 					<span>发现</span>
 				</div>
@@ -285,28 +294,89 @@
 			</div>
 			<!-- 发现  end-->
 			<!-- 设置-->
-			<div id="shezhi" class="friendAll">
-
+			<div id="shezhi" class="friendAll disnone">
+				<div class="fATitle">
+					<span>设置</span>
+				</div>
+				<div class="group">
+					<div class="column">
+						<img src="images/headImages/myHeadImg.jpg">
+					</div>
+					<div class="column piTitleSetting">
+						<span id="sz_MyNicName">千冥静</span>
+						<bt></bt>
+						<span id="sz_MyQQ" >2262905133</span>
+					</div>
+					<div class="online_state_setting">
+						<i id="mainIicon" class="main_icon online_icon SZIcon"></i>
+						<i class="down_arrow"></i>
+						<ul class="OsList" isShow="no">
+							<li class="OsLi">
+								<i class="main_icon online_icon"></i>
+								<span>在线</span>
+							</li>
+							<li class="OsLi">
+								<i class="main_icon callme_icon"></i>
+								<span>Q我</span>
+							</li>
+							<li class="OsLi">
+								<i class="main_icon away_icon"></i>
+								<span>离开</span>
+							</li>
+							<li class="OsLi">
+								<i class="main_icon busy_icon"></i>
+								<span>忙碌</span>
+							</li>
+							<li class="OsLi">
+								<i class="main_icon silent_icon"></i>
+								<span>静音</span>
+							</li>
+							<li class="OsLi">
+								<i class="main_icon hidden_icon"></i>
+								<span>隐身</span>
+							</li>
+							<li class="OsLi">
+								<i class="main_icon offline_icon"></i>
+								<span>离线</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="group shezhiKuang">					
+					<span class="label01">消息相关设置</span>
+					<p class="more_icon"></p>
+				</div>
+				<div class="shezhiQQ">
+					<div class="group shezhiKuang">
+						<span class="label01">关于QQ</span>
+						<p class="more_icon"></p>
+					</div>
+				</div>
+				<div class="group shezhiKuang logOut">					
+					<span class="label02">退出当前账号</span>
+				</div>
 			</div>
 			<!-- 设置  end-->
+			<!--WebQQ 栏目选择-->
 			<ul id="fAFotter">
-				<li>
-					<div id="fAFPic01" class="fAFPic"></div>
+				<li class="fAFLi fAFPicBg fAF01">
+					<div class="fAFPic fAFPic01"></div>
 					<span>会话</span>
 				</li>
-				<li>
-					<div id="fAFPic02" class="fAFPic"></div>
+				<li class="fAFLi fAF02">
+					<div class="fAFPic fAFPic02"></div>
 					<span>联系人</span>
 				</li>
-				<li>
-					<div id="fAFPic03" class="fAFPic"></div>
+				<li class="fAFLi fAF03">
+					<div class="fAFPic fAFPic03"></div>
 					<span>发现</span>
 				</li>
-				<li>
-					<div id="fAFPic04" class="fAFPic"></div>
+				<li class="fAFLi fAF04">
+					<div class="fAFPic fAFPic04"></div>
 					<span>设置</span>
 				</li>
 			</ul>
+			<!--WebQQ 栏目选择  end-->
 		</div>
 		<!-- 好友列表  end-->
 
@@ -314,9 +384,15 @@
 		<div id="bottomArea">
 			<p id="BgLeft"></p>
 			<p id="BgRight"></p>
-			<a id="fanKui" href="#">意见反馈</a>
+			<a id="fanKui" class="fanKH" href="#">意见反馈</a>
+			<a id="fanHui" class="fanKH" href="http://192.168.1.35/hujing">返回索引</a>
 		</div>
 		<!-- 底部  end-->
+
+		<!--聊天区域-->
+		
+		<!--聊天区域  end-->
+
 	</div>
 </body>
 </html>
