@@ -8,7 +8,7 @@ $(function(){	//alert("123");
 		BgChangeRight();//更换下一张背景
 	});
 
-
+	
 	//在线状态设置
 	$(".online_state_setting").click(function(){
 		
@@ -188,7 +188,7 @@ function TCchatArea(){
 		var chatHtml = '';
 		
 		chatHtml+='	<!--聊天框-->';
-		chatHtml+='	<div id="'+ talkid +'" class="qqChat box">';
+		chatHtml+='	<div id="'+ talkid +'" class="qqChat">';
 		chatHtml+='		<div class="chatTitle">';
 		chatHtml+='			<div class="chatMenu">';
 		chatHtml+='				<p></p>';
@@ -246,8 +246,8 @@ function TCchatArea(){
 			$(this).css("z-index","12");
 		});
 
-
-		
+		//div拖拽
+		$( ".qqChat" ).draggable();
 		
 		//出现在随机的位置
 		var ranleft= (Math.random()+5)*100;
