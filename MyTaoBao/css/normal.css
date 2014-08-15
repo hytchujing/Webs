@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	font-family: 微软雅黑,Arial,SimSun;
+	font-family: 微软雅黑,Arial,Tahoma;
 	font-size: 12px;
 	text-align: left;
 	list-style: none;
@@ -10,5 +10,4 @@
 ul,ol,li{list-style: none;}
 img{border: 0;}
 a{color: #3C3C3C; outline: none;}
-a:hover{ color: #FF4400;}
 span{color: #3C3C3C;}
