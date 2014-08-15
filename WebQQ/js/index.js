@@ -109,16 +109,39 @@ $(function(){	//alert("123");
 
 	//下拉菜单
 	$(document).on("click", ".chatMenu", function () {				
-			var isshow = $(this).parent().next().find(".TcTab").attr("isShow");			
-			if(isshow == "false"){
-				$(this).parent().next().find(".TcTab").css("display","block");
-				$(this).parent().next().find(".TcTab").attr("isShow","true");
-			}
-			else{
-				$(this).parent().next().find(".TcTab").css("display","none");
-				$(this).parent().next().find(".TcTab").attr("isShow","false");
-			}
-		});
+		var isshow = $(this).parent().next().find(".TcTab").attr("isShow");			
+		if(isshow == "false"){
+			$(this).parent().next().find(".TcTab").css("display","block");
+			$(this).parent().next().find(".TcTab").attr("isShow","true");
+		}
+		else{
+			$(this).parent().next().find(".TcTab").css("display","none");
+			$(this).parent().next().find(".TcTab").attr("isShow","false");
+		}
+	});
+
+
+	//聊天内容发送与显示
+	$(document).on("click", ".sendButten", function () {
+		var chatContentHtml ="";
+
+		var MyWords = $(this).parent().find(".txtInput").val();
+		chatContentHtml +='				<div class="chatDesContentA">';
+		chatContentHtml +='					<div class="cDAHeader"></div>';
+		chatContentHtml +='					<div class="cDALeft">';
+		chatContentHtml +='						<span class="cDAMyNicName">千冥静</span>';
+		chatContentHtml +='						<div class="cDAMyWords">'+MyWords+'</div>';
+		chatContentHtml +='					</div>';								
+		chatContentHtml +='				</div>';
+
+		$(this).parent().parent().find(".chatDesContent").append(chatContentHtml);
+		var curContent = $(this).parent().parent().find(".chatDesContent");
+
+		//滚动到最上面的自定义动画
+		curContent.animate({"scrollTop":"1000000x"},0);
+		$(this).parent().find(".txtInput").val("");
+	});
+
 
 	//弹出聊天框
 	TCchatArea();
@@ -165,7 +188,7 @@ function TCchatArea(){
 		var chatHtml = '';
 		
 		chatHtml+='	<!--聊天框-->';
-		chatHtml+='	<div id="'+ talkid +'" class="qqChat">';
+		chatHtml+='	<div id="'+ talkid +'" class="qqChat box">';
 		chatHtml+='		<div class="chatTitle">';
 		chatHtml+='			<div class="chatMenu">';
 		chatHtml+='				<p></p>';
@@ -192,10 +215,23 @@ function TCchatArea(){
 		chatHtml+='				</li>';
 		chatHtml+='			</ul>';
 		chatHtml+='			<!--下拉菜单  end-->';
-		chatHtml+='			';
+		chatHtml+='			<!--聊天内容-->';
+		chatHtml+='			<div class="chatDesContent">';
+		chatHtml+='             <!--聊天对话-->';
+		chatHtml+='             <!--聊天对话  end-->';
+		chatHtml+='			</div>';
+		chatHtml+='			<!--聊天内容  end-->';
 		chatHtml+='		</div>';
-		chatHtml+='		<div class="chatControl"></div>';
-		chatHtml+='	</div>';
+		chatHtml+='		<div class="chatControl">';
+		chatHtml+='			<div class="ImgFace">';
+		chatHtml+='				<a class="facePic"></a>';
+		chatHtml+='			</div>';
+		chatHtml+='			<input class="txtInput"></input>';
+		chatHtml+='			<button class="sendButten">';
+		chatHtml+='				<span>发送</span>';
+		chatHtml+='			</button>';
+		chatHtml+='		</div>';
+		chatHtml+='	</div>';		
 		chatHtml+='	<!--聊天框  end-->';
 
 		$("body").append(chatHtml);
