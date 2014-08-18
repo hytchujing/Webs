@@ -10,6 +10,79 @@
 	});
 
 	//焦点图--电视墙
+	$(document).ready(function(){
+		$('#focus').mouseover(function(){
+			$('.pre').css('display','block');
+			$('.next').css('display','block');
+		});
+		$('#focus').mouseout(function(){
+			$('.pre').css('display','none');
+			$('.next').css('display','none');
+		});
+	});
+	var sWidth = $("#focus").width();
+	var len = $("#focus ul li").length;
+	var index = 0;
+	var picTimer;
+	var btn = "<div class='btnBg'></div><div class='btn'>";
+	for ( var i = 0; i < len; i++) {
+		btn += "<span></span>";
+	}
+	btn += "</div><div class='preNext pre'></div><div class='preNext next'></div>";
+	$("#focus").append(btn);
+	$("#focus .btn span").addClass("on").mouseover(function() {
+		index = $("#focus .btn span").index(this);
+		showPics(index);
+	}).eq(0).trigger("mouseover");
+	/*$("#focus .preNext").css("opacity",1).hover(function() {
+		$(this).stop(true, false).animate( {
+			"opacity" : "1"
+		}, 300);
+	}, function() {
+		$(this).stop(true, false).animate( {
+			"opacity" : "1"
+		}, 300);
+	});*/
+	$("#focus .pre").click(function() {
+		index -= 1;
+		if (index == -1) {
+			index = len - 1;
+		}
+		showPics(index);
+	});
+	$("#focus .next").click(function() {
+		index += 1;
+		if (index == len) {
+			index = 0;
+		}
+		showPics(index);
+	});
+	$("#focus ul").css("width", sWidth * (len));
+	$("#focus").hover(function() {
+		clearInterval(picTimer);
+	}, function() {
+		picTimer = setInterval(function() {
+			showPics(index);
+			index++;
+			if (index == len) {
+				index = 0;
+			}
+		}, 4000);
+	}).trigger("mouseleave");
+	function showPics(index) {
+		var nowLeft = -index * sWidth;
+		$("#focus ul").stop(true, false).animate( {
+			"left" : nowLeft
+		}, 300);
+		$("#focus .btn span").stop(true, false).animate( {
+			"opacity" : "0.4"
+			
+		}, 300).eq(index).stop(true, false).animate( {
+			"opacity" : "1"
+			
+		}, 300);
+	}
+
 
 	//热点推荐
 	$(".show_good_li").hover(function(){
@@ -29,7 +102,9 @@
 	//杂志轮转
 	bottom_pic();
 
-	//
+	
+	//滚动容器ID，上控ID,下控ID，li的宽度，滚动间隔，滚动速率
+	smoothScroll('co_ad_ul','ad_rt','ad_lt',627,2000,0.1);
 
 });
 
@@ -46,6 +121,71 @@ function setPositon(){
 	});
 	
 }
+
+function smoothScroll(scr_obj,up_obj,down_obj,w,gap,vate) {
+ //初始化
+ var scrollE = document.getElementById(scr_obj);
+ var scrollCon = scrollE.parentNode;
+ var upE = document.getElementById(up_obj);
+ var downE = document.getElementById(down_obj);
+ var ulE = scrollE.getElementsByTagName('ul')[0];
+ var lilist = ulE.getElementsByTagName('li');
+ var ulE_copy = document.createElement('ul');
+ scrollE.appendChild(ulE_copy);
+ ulE_copy.innerHTML = ulE.innerHTML;
+ scrollCon.scrollLeft = 0;
+ var remark = 0,time=20,timer,fx_timer;
+ var l = lilist.length,togget = false;
+ //启动动画
+ timer = setTimeout(fx,gap);
+ //定义动画
+ function fx() {
+ clearTimeout(timer);
+ remark+=1;
+ fx_timer = setInterval(setLeft,time);
+ }
+ //定义左动画
+ function setLeft() {
+ clearTimeout(timer);
+   var left = scrollCon.scrollLeft;
+   if(left<remark*w) scrollCon.scrollLeft = Math.ceil(left+(parseInt(remark*w)-left)*vate);
+   else {
+     clearInterval(fx_timer);
+	 remark = remark<l?remark:0;
+     scrollCon.scrollLeft = remark*w;
+	 if(!togget) timer = setTimeout(fx,gap);
+	 }
+   }
+ //定义右动画
+ function setRight() {
+ clearTimeout(timer);
+   var right = scrollCon.scrollLeft;
+   if(right>remark*w) scrollCon.scrollLeft = Math.floor(right-(right-parseInt(remark*w))*vate);
+   else {
+     clearInterval(fx_timer);
+	 remark = remark<1?l:remark;
+     scrollCon.scrollLeft = remark*w;
+	 if(!togget) timer = setTimeout(fx,gap);
+	 }
+   }
+//扩展为可控
+upE.onclick = function() {
+ clearInterval(fx_timer);
+ remark = remark<l?remark:0;
+ scrollCon.scrollLeft = remark*w;
+ fx();
+ }
+downE.onclick = function() {
+ clearInterval(fx_timer);
+ remark = remark<1?l:remark;
+ scrollCon.scrollLeft = remark*w;
+ remark-=1;
+ fx_timer = setInterval(setRight,time);
+ } 
+//鼠标事件
+scrollCon.onmouseover = function() {togget = true;clearTimeout(timer);}
+scrollCon.onmouseout = function() {togget = false;timer = setTimeout(fx,gap);}
+ } 
 
 //*杂志轮转*/
 function bottom_pic(){
@@ -129,3 +269,6 @@ function bottom_pic(){
 		}
 	}
 }
+
+
+

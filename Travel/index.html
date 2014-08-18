@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normal.css">	
 	<link rel="stylesheet" type="text/css" href="css/index.css">	
 	<script type="text/javascript" src="js/Jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/destination_tag.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<title>新旅行官网</title>
 </head>
@@ -139,7 +140,33 @@
 			</div>
 			<!--导航  end-->
 			<div class="main_box">
-				<div id="focus"></div>
+				<!--电视墙-->
+				<div id="focus">
+					<ul class="focus_ul">
+						<li class="focus_li">
+							<a href="#">
+								<img src="images/20140703023405520.jpg"></a>
+						</li>
+						<li class="focus_li">
+							<a href="#">
+								<img src="images/20140804045720294.jpg"></a>
+						</li>
+						<li class="focus_li">
+							<a href="#">
+								<img src="images/20140804034959531.jpg"></a>
+						</li>
+						<li class="focus_li">
+							<a href="#">
+								<img src="images/20140804022604875.jpg"></a>
+						</li>
+					</ul>
+					<div class="jdt_bg"></div>
+					<div class='btnBg'></div>
+					<div class='btn'>
+					</div>
+					<div class="preNext pre"></div>
+					<div class=" preNext next"></div>
+				</div>
 				<div class="main_lt">
 					<!--精品推荐-->
 					<div class="show_good">
@@ -373,14 +400,138 @@
 						</div>
 						<div class="co_ad_scroll">
 							<div id="co_ad_ul">
-								<ul></ul>
+								<ul>
+									<li>
+										<a href="#">
+											<img src="images/20130607120916612.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/20130411043130531.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/20130607023417664.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/20140804094156884.jpg">
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<img src="images/20130607120916612.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/20130411043130531.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/20130607023417664.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/20140804094156884.jpg">
+										</a>
+									</li>
+								</ul>
 							</div>
 							<a id="ad_lt"></a>
 							<a id="ad_rt"></a>
 						</div>
 					</div>
 				</div>
-				<div class="main_rt"></div>
+				<div class="main_rt">
+					<!--微博-->
+					<div class="weibo">
+						<div class="weibo_tit">
+							<span id="sina_weibo">新浪微博</span>
+							<b>|</b>
+							<span id="qq_weibo">腾讯微博</span>
+							<div class="clearfix"></div>
+						</div>
+						<div class="sanjiao_a"></div>
+						<div class="sanjiao_b"></div>
+						<div id="sanjiao_a1" class="weibo_main">
+							<img src="images/sina_weibo_cont.png">
+						</div>
+						<div id="sanjiao_b1" class="weibo_main">
+							<img src="images/qq_weibo_cont.png">
+						</div>
+					</div>
+					<!--物业资讯-->
+					<div class="news">
+						<div class="news_tit">
+							<span class="chn_tit chntit2">业内资讯</span>
+							<span>NEWS</span>
+							<a href="#" class="more"></a>
+						</div>
+						<ul>
+							<li>
+								<a href="#"> 更加聪明地游玩巴黎</a>
+							</li>
+							<li>
+								<a href="#"> 丽江金茂君悦酒店开业在即</a>
+							</li>
+							<li>
+								<a href="#"> 北京JW万豪酒店亚洲风尚餐厅夏日露台烧烤</a>
+							</li>
+							<li>
+								<a href="#"> 青海湖将举行首届中国商学院环青海湖超级越野跑</a>
+							</li>
+							<li>
+								<a href="#"> Mazda CX-5“阅尽天下无数山”活动圆满结束</a>
+							</li>
+						</ul>
+					</div>
+					<!--新刊速递-->
+					<div class="new_magazine">
+						<div class="news_tit">
+							<span class="chn_tit chntit2">新刊速递</span>
+							<span>MAGAZINE</span>
+							<a href="#" class="more"></a>
+						</div>
+						<div class="new_main">
+							<a class="new_lt" href="#">
+								<img src="images/thumb_134_172_20131210023952102.jpg">
+							</a>
+							<div class="new_rt">
+								<div class="new_rt_text">								
+									黄圣依 戛纳的小城大梦
+									<br>
+									好的电影讲述的都是真实的...	
+								</div>
+								<img class="erweima" src="images/erwei.jpg">
+							</div>
+						</div>
+					</div>
+					<!--热门标签-->
+					<div class="hot_tags">
+						<div class="news_tit">
+							<span class="chn_tit chntit2">热门标签</span>
+							<span>HOT TAGS</span>
+							<a href="#" class="more"></a>
+						</div>
+						<div class="tags_main">
+							<div id="destination_tag">
+								<a href="#">印度 少年派1</a>
+								<a href="#">印度 少年派2</a>
+								<a href="#">印度 少年派3</a>
+								<a href="#">印度 少年派4</a>
+								<a href="#">印度 少年派5</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
