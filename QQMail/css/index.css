@@ -30,7 +30,9 @@
 /* */
 
 /* */
-#leftPanel{ position: absolute;top: 77px; width: 179px; left: 8px; bottom: 0; border-left: 0px none; height: auto;}
+#mainContent{ position: absolute;top: 77px; width: 100%; height: 553px;}
+#leftPanel{ position: relative;top: 0px; width: 179px;height: 553px;left: 8px; bottom: 0; border-left: 0px none;float: left;}
+/*#leftPanelCont{width: 179px; height: auto;position: relative;}*/
 #navBarDiv{right: 0; z-index: 3;}
 .navbar{width: 179px;height: 107px;margin: 0px;list-style: none outside none; background: url('images/nav_bg104473.gif') ;}
 .composepart{margin: 0px 10px 0px 10px;padding: 2px 0px 0px;height: 26px;}
@@ -38,24 +40,27 @@
 .addrpart{margin: 0px 10px 0px 10px;padding: 2px 0px 0px;height: 26px;}
 .fs{height: 26px;color: #AFE6EE;line-height: 26px;overflow: hidden;padding: 2px 2px 0px 13px;margin-bottom: 1px;margin-top: 0px;}
 .fs a{display: block; color: #afe6ee; line-height: 24px;padding-left: 31px;font-weight: bold;font-size: 14px;}
-.fs a:hover{color: #afe6ee; text-decoration: none;background-color:#006B8E }
+.fs:hover{color: #afe6ee; text-decoration: none;background-color:#006B8E }
 .fs input{cursor: pointer; float: left;border: 0px none;padding: 0px;outline: medium none;width: 20px;height: 20px;margin: -20px 0px 0px 2px;}
 .composebtn{background: url('images/mail1d47c7.png') no-repeat scroll 0px -1px transparent;}
 .checkbtn{background: url('images/mail1d47c7.png') no-repeat scroll 0px -33px transparent;}
 .addrbtn{background: url('images/mail1d47c7.png') no-repeat scroll 0px -63px transparent;}
 
-#navMiBar{}
+#navMiBar{right: 0; z-index: 3;width: 179px;height:433px;}
 .listbg{background: url('images/topline104473.gif') repeat scroll 0% 0% transparent;}
 .listflow{position: absolute;top: 107px;left: 0px;right: 0px;bottom: 13px;overflow: hidden;height: auto;}
-.folderDiv{margin: 0px 5px 0px 6px;position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;height: 100%;overflow-y: auto;overflow-x: hidden;}
+.folderDiv{margin: 0px 5px 0px 10px;position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;height: 100%;overflow-y: auto;overflow-x: hidden;}
+.fs_spec:hover{background-color:#006B8E }
 .fs_spec a{color: #a3a3a3; display: block;height: 22px;overflow: hidden;padding-left: 13px;text-decoration: none;}
 .f_size{font-size: 12px;}
 
-
-
+#navBottomTd{ width: 179px; height: 13px;position: absolute;top: 540px;bottom: 0; right: 0;}
+.navbottom{width: 179px;height: 13px;background: url('images/topline104473.gif') no-repeat scroll -179px -11px transparent;}
 
 
 
 
 
 /* */
+#mainFrameContainer{ position: absolute;top: 0px;left: 192px;bottom: 0px;right: 0px;overflow: hidden;z-index: 4;float: right;}
+#mainFrame{width: 100%;height:100%;z-index: 5;background-color: #ffc;}
