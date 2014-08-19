@@ -1,0 +1,9 @@
+*{ margin: 0; padding: 0; text-decoration: none; }
+img{border: 0;}
+ul,ol,li{list-style: none;}
+
+body{ font-size: 12px;font-family: "lucida Grande",Verdana; position: relative;}
+a,a:link,a:visited{color: #069;}
+a{ text-decoration: none;cursor: pointer;outline: medium none;}
+a:hover{text-decoration: underline;}
+.clearfix:after{ width: 0; height: 0; clear: both;display: block;content: ".";visibility: hidden;}
