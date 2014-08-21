@@ -128,15 +128,44 @@ body{ background-color: #dbdde0; font-family: "微软雅黑";}
 
 
 /*右半栏*/
-footer{width: 100%; height: 412px; padding: 28px 0 20px 0;background: none repeat scroll 0% 0% #333;}
-.footer-ul{ width:100%; height:auto;color: #999; margin: 0 auto;}
-.footer-li{float: left;width: 250px;}
-.footer-li h2{color: #FFF;text-shadow: 1px 2px #000;font-size: 14px;font-family: "微软雅黑";margin-bottom: 10px;padding-left: 12px;}
-.fooLiUL{width: 262px; height: auto; padding-top: 5px; border-left: 1px solid #666;font-family: "宋体";font-size: 12px;text-shadow: 1px 1px #000;}
-.fooLiUL li{padding-left: 10px; cursor: pointer;margin-bottom: 13px;}
-.fooLiUL li:hover{color: #DC1720;}
-.foot{width: 1260px; height: 148px; margin-top: 75px;background-color: #ffc;}
-.foot img{ float: left;width: 180px; height: 56px;}
+.ads-top-small2{margin-left: 10px;margin-top: -40px;position: absolute;cursor: pointer;height: 60px; text-align: left;}
+.ads-top-small2 a{background: url('images/zuimei.png') no-repeat scroll 0% 0% transparent;display: block;width: 210px;height: 40px;text-indent: -999em;}
+
+.ads300{padding-top: 13px;padding-left: 15px;padding-bottom: 13px;background: none repeat scroll 0% 0% #262626;}
+.BAIDU{width: 285px; height: 225px;}
+.s-magazine{position: relative; overflow: hidden;}
+.subtitleS{height: 32px;background: none repeat scroll 0% 0% #222;border-top: 1px solid #464646;padding-top: 8px;color: #FFF;padding-left: 10px;font-size: 16px;font-family: "微软雅黑";width: 290px;font-weight: lighter;}
+.roll-text{position: absolute;right: 10px;top: 13px;color: #EAEAEA;width: 200px;text-align: right;}
+.contentS{background: none repeat scroll 0% 0% #333;border-width: 1px 0px;border-style: solid;border-color: #464646;padding: 20px 10px;width: 310px;overflow: hidden;}
+.body-right .s-magazine ul li {float: left;margin-right: 8px;width: 64px;height: 91px;position: relative;overflow: hidden;cursor: pointer;margin-left: 18px}
+.sq-small-img {float: left;margin: 0px 6px 8px 0px;overflow:hidden; position: relative;height: 64px;width: 64px;display: block;cursor: pointer;}
+.s-activity{overflow: hidden;}
+.s-organzation{overflow: hidden;}
+.s-people{overflow: hidden;}
+.sq-small-font{float: left;margin: 0px 8px 8px 0px;color: #FFF;overflow: hidden;position: relative;height: 42px;width: 64px;display: block;background-color: #959595;text-align: center;font-size: 16px;font-family: "微软雅黑";padding-top: 22px;cursor: pointer;transition: all 0.3s ease 0s;}
+.sq-small-font.w2{width: 136px;}
+.sq-small-more{background: url('images/icon-small-sq-more.png') no-repeat scroll -14px 0px transparent;font-size: 12px;font-family: "宋体";height: 47px;padding-top: 17px;width: 64px;}
+.sq-small-more:hover{background-color: #aaa;}
+.list-left{overflow: hidden;}
+.pt0{padding-top: 0;}
+.list-left ul li{border-bottom: 1px solid #242424;padding-left: 9px;padding-right: 30px;border-top: 1px solid #464646;padding-top: 13px;cursor: pointer;width: 240px;height: 52px;}
+.list-left ul li:hover{background-color: #111111;}
+.list-left ul li:first-child {border-top: medium none;}
+.list-left ul li span{height: 30px;width: 40px;background: url('images/bg-ranknum.jpg') repeat scroll 0% 0% transparent;text-align: center;color: #FFF;padding-top: 10px;overflow: hidden;font-family: "微软雅黑";font-size: 16px;display: block;float: left;border-right: 1px solid #464646;margin-right: 20px;margin-bottom: 10px;}
+.list-left ul li h3{font-size: 14px;color: #EEE;font-family: "微软雅黑";font-weight: lighter;}
+.weixin-public{text-align: center;}
+.weixin-public h3{ color: #fffefe; font-size: 20px;}
+.weixin-public p{color: #aaa; font-size: 12px; margin-bottom: 10px;font-family: "宋体";}
+.weixin-public img{width: 125px; height: 125px; overflow: hidden;}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -145,23 +174,21 @@ footer{width: 100%; height: 412px; padding: 28px 0 20px 0;background: none repea
 
 
 /*页脚*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer{width: 100%; height: 412px; padding: 28px 0 20px 0;background: none repeat scroll 0% 0% #333;}
+.footer-ul{ width:100%; height:auto;color: #999; margin: 0 auto;}
+.footer-li{float: left;width: 250px;}
+.footer-li h2{color: #FFF;text-shadow: 1px 2px #000;font-size: 14px;font-family: "微软雅黑";margin-bottom: 10px;padding-left: 12px;}
+.fooLiUL{width: 262px; height: auto; padding-top: 5px; border-left: 1px solid #666;font-family: "宋体";font-size: 12px;text-shadow: 1px 1px #000;}
+.fooLiUL li{padding-left: 10px; cursor: pointer;margin-bottom: 13px;}
+.fooLiUL li:hover{color: #DC1720;}
+.foot{width: 1260px; height: 148px; margin-top: 75px;}
+.foot img{ float: left;width: 180px; height: 56px; cursor: pointer;}
+.icon_group{margin-top: 10px;}
+.icon_group.icon{float: left;cursor: pointer;}
+.icon_weixin{height: 32px; width: 32px; background-position: -168px -70px;display: block;float: left;margin-right: 6px;}
+.icon_weibo{height: 32px; width: 32px; background-position: -208px -71px;display: block;float: left;}
+.icon_ff{height: 32px; width: 32px; background-position: -244px -70px;display: block;float: left;}
+.icon_tt{height: 32px; width: 32px; background-position: -277px -70px;display: block;float: left;}
+.icon_cng{height: 32px; width: 32px; background-position: -312px -70px;display: block;float: left;}
+.copyright{color: #999;font-family: "宋体";font-size: 12px;margin-top: 20px;}
 
