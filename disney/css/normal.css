@@ -2,5 +2,6 @@
 img{ border: 0;}
 ul,ol,li,a{text-decoration: none;list-style: none;outline: none;}
 input{outline: none;border: 0;}
-
+a{ color: #000;}
 .clear{clear: both;}
+.clearS{clear: both; line-height: 0; height: 0px; font-size: 0px;overflow: hidden;}
