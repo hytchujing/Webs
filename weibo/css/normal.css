@@ -2,4 +2,4 @@
 img{border: 0;}
 ul,ol,li{ list-style: none;}
 a,input{ outline: none;}
-a{color: #0a8cd2;text-decoration: none;}
+a{color: #0a8cd2;text-decoration: none; cursor: pointer;}

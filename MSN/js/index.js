@@ -42,6 +42,13 @@ $(function(){
 	});
 	//幻灯片右边subject  end
 
+	$(".main2Leftli").mouseover(function(){
+		$(".main2Leftli").find(".main2LeftLiContent").css("display","none");
+		$(".main2Leftli").find(".main2LeftH3").css("display","block");
+		$(this).children(".main2LeftLiContent").css("display","block");
+		$(this).children(".main2LeftH3").css("display","none");
+	});
+
 	//hotRecPic 每日精选
 	$("#hotRimg").hover(function(){
 		$(this).css({

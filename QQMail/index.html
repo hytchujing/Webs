@@ -23,7 +23,7 @@
 				</div>
 				<div class="search_subject nowrap">
 					<div id="smartSearch" class="smartsearch">
-						<input id="subject" class="searchinput" type="text" value="邮件搜索..." ></input>
+						<input id="subject" class="searchinput" type="text" value="邮件搜索..." onfocus="if(this.value=='邮件搜索...') {this.value=''}" onblur="if(this.value=='') {this.value='邮件搜索...'}"  >
 						<span id="searchIcon" class="ss_icon ss_fronticon ss_icon_search"></span>
 						<span id="subjectsearchLogo" class="ss_icon ss_endicon ss_icon_arrowdown"></span>
 					</div>
@@ -107,12 +107,127 @@
 						</div>
 					</div> 
 				</div>
-				<div id="navBottomTd" class="navbottom">				
+				<div id="navBottomTd" class="navbottom">
+									
 				</div>
 			<!-- </div> -->
 		</div>
 		<div id="mainFrameContainer">
 			<div id="mainFrame">
+				<div id="ContentRight">
+						<div class="txt-title">
+							<a class="shoujianxiang">收件箱</a>
+							<span class="count">(共 122 封，其中 <a href="#" class="weidu">未读邮件</a> 20 封)</span>
+						</div>
+						<div class="xuanzelan">
+							<ul class="buttons">
+								<li class="dele"><a href="#" ><input type="button"  value="删除" style="padding-left:5px;padding-right:5px"></a></li>
+								<li><a href="#"><input type="button"  value="彻底删除" style="padding-left:5px;padding-right:5px"/></a></li>
+								<li><a href="#"><input type="button"  value="转发" style="padding-left:5px;padding-right:5px"></a></li>
+								<li><a href="#"><input type="button"  value="举报" style="padding-left:5px;padding-right:5px"></a></li>
+								<li><a href="#"><input type="button"  value="全部标为已读" style="padding-left:5px;padding-right:5px"/></a></li>
+								<li><a href="#"><input type="button"  value="标记为..." style="padding-left:5px;padding-right:5px"/></a></li>
+								<li><a href="#"><input type="button"  value="移动到..." style="padding-left:5px;padding-right:5px"/></a></li>
+							</ul>	
+			      			<div class="right">
+								<span>1/5页</span>
+								<a href="#">下一页</a>
+								<a href="#">跳转</a>
+							</div>
+						</div>
+						<div class="shoulie">
+							<ul>
+							    <li class="li1"><a ><input type="checkbox" id="ch1" isch="no"/></a></li>
+							    <li class="li2"><img src="css/images/egfsrghtr.png"></li>
+							    <li class="li3"><a class="">发件人</a></li>
+							    <li class="li4"><a class="">主题</a></li>
+							    <li class="li5"><a class="">时间↓</a></li>
+						    </ul>
+						</div>
+						<div class="gengzao"><b>更早</b>（<span>25封</span>）</div>
+						
+						<ul class="xinArea">
+							<div id="xinContent">
+								<div class="xinAreaLi" id="dele1" deleid="1"; isshow="yes">
+							    <li class="liA"><a ><input type="checkbox" class="choice" name="1"/></a></li>
+							    <li class="liB"><a class="xinxi"></a></li>
+							    <li class="liC"><a class="">360云盘  </a></li>
+							    <li class="liD"><p class="">360云盘360云盘360云盘 </p></li>
+							    <li class="liE" id="dj"><a class="">8月20日</a><a href="#" class="fg"></a>
+			                       <a href="#" class="fg1"></a>
+			                    </li>
+								</div>
+								<div class="xinAreaLi" id="dele2" deleid="2"; isshow="yes" >
+							    <li class="liA"><a ><input type="checkbox" class="choice" name="1"/></a></li>
+							    <li class="liB"><a class="xinxi"></a></li>
+							    <li class="liC"><a class="">360云盘  </a></li>
+							    <li class="liD"><p class="">360云盘360云盘360云盘</p></li>
+							      <li class="liE"><a class="">8月16日</a><a href="#" class="fg"></a>
+							   	<a href="#" class="fg1"></a></li>
+								</div>
+								<div class="xinAreaLi" id="dele3" deleid="3"; isshow="yes">
+							    <li class="liA"><a  ><input type="checkbox" class="choice"/></a></li>
+							    <li class="liB"><a  class="xinxi"></a></li>
+							    <li class="liC"><a class="">360云盘 </a></li>
+							    <li class="liD"><p class="">360云盘360云盘360云盘</p></li>
+							      <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+							   	<a href="#" class="fg1"></a></li>
+								</div>
+								<div class="xinAreaLi" id="dele4" deleid="4"; isshow="yes">
+							    <li class="liA"><a ><input type="checkbox" class="choice"/></a></li>
+							    <li class="liB"><a class="xinxi"></a></li>
+							    <li class="liC"><a class="">360云盘 </a></li>
+							    <li class="liD"><p class="">360云盘360云盘360云盘</p></li>
+							   <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+							   	<a href="#" class="fg1"></a></li>
+								</div>
+								<div class="xinAreaLi" id="dele5" deleid="5"; isshow="yes">
+							    <li class="liA"><a ><input type="checkbox" class="choice"/></a></li>
+							    <li class="liB"><a class="xinxi"></a></li>
+							    <li class="liC"><a class="">宝宝 </a></li>
+							    <li class="liD"><p class="">明天回家吗</p></li>
+							      <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+							   	<a href="#" class="fg1"></a></li>
+								</div>
+								<div class="xinAreaLi" id="dele6" deleid="6"; isshow="yes" >
+							    <li class="liA"><a><input type="checkbox" class="choice"/></a></li>
+							    <li class="liB"><a class="xinxi"></a></li>
+							    <li class="liC"><a class="">写意天下 </a></li>
+							    <li class="liD"><p class="">写意天下</p></li>
+							     <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+							   	<a href="#" class="fg1"></a></li>
+								</div>
+							</div>
+						</ul>
+						<div class="list_btline">
+							<li>
+							   <span>选择:</span>
+							   <a >全部</a>
+							   <span>-</span>
+							   <a >无</a>
+							   <span>-</span>
+							   <a >已读</a>
+							   <span>-</span>
+							   <a >未读</a>
+						    </li>
+						</div>
+						<div class="xuanzelan">
+							<ul class="buttons">
+								<li><a href="#"><input type="button"  value="删除" style="padding-left:5px;padding-right:5px"></a></li>
+								<li><a href="#"><input type="button"  value="彻底删除" style="padding-left:5px;padding-right:5px"/></a></li>
+								<li><a href="#"><input type="button"  value="转发" style="padding-left:5px;padding-right:5px"></a></li>
+								<li><a href="#"><input type="button"  value="举报" style="padding-left:5px;padding-right:5px"></a></li>
+								<li><a href="#"><input type="button"  value="全部标为已读" style="padding-left:5px;padding-right:5px"/></a></li>
+								<li><a href="#"><input type="button"  value="标记为..." style="padding-left:5px;padding-right:5px"/></a></li>
+								<li><a href="#"><input type="button"  value="移动到..." style="padding-left:5px;padding-right:5px"/></a></li>
+							</ul>	
+			      			<div class="right">
+								<span>1/5页</span>
+								<a href="#">下一页</a>
+								<a href="#">跳转</a>
+							</div>
+						</div>
+				</div>
 			</div>
 		</div>
 	</div>
