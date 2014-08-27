@@ -5,8 +5,11 @@ $(function(){
 		$(this).find(".S_txt1").addClass("lev_curr");
 	});
 	setPositon();
-
 	faBu();
+	shoucang();
+	Zan();
+
+
 });
 
 //页面滚动时左导航位置
@@ -21,6 +24,7 @@ function setPositon(){
 	});	
 }
 
+//发布微博
 function faBu(){
 	$(".mainCenter1BRightR").click(function(){
 		var castval = $(".textareastyle").val();
@@ -53,13 +57,13 @@ function faBu(){
 			html+='				<a href="#" class="hide">举报</a>';
 			html+='			</div>';
 			html+='			<div class="mainCenter4MainContent4Right">';
-			html+='				<a href="#" id="mainCenter4MainContent4RightSA"><em></em>(502)</a>';
+			html+='				<a class="mainCenter4MainContent4RightSA" iszan="no" title="赞"><em></em>赞(<span class="zanNum" count="0">0</span>)</a>';
 			html+='				<span>|</span>';
-			html+='				<a href="#"><em></em>转发(1045)</a>';
+			html+='				<a class="zhuanFa" ><em></em>转发(<span class="zhuanFaNum">1045</span>)</a>';
 			html+='				<span>|</span>';
-			html+='				<a href="#">收藏(1)</a>';
+			html+='				<a class="shouCang" issc="no">收藏</a>';
 			html+='				<span>|</span>';
-			html+='				<a href="#">评论(120)</a>';
+			html+='				<a class="pingLun">评论(<span class="pingLunNum">120</span>)</a>';
 			html+='			</div>';
 			html+='		</div>';
 			html+='	</div>';
@@ -73,4 +77,44 @@ function faBu(){
 
 	});
 
+}
+
+//收藏
+function shoucang(){
+	$(document).on("click",".shouCang",function(){
+		var sc=$(this).attr("issc");		
+		if (sc=="no") {
+			$(this).html("取消收藏");
+			$(this).attr("issc","yes");
+		}
+		else{
+			$(this).html("收藏");
+			$(this).attr("issc","no");
+		}
+
+	});
+}
+
+//赞
+function Zan(){
+	$(document).on("click",".mainCenter4MainContent4RightSA",function(){
+		var zan = $(this).attr("iszan");
+		var zancount = $(this).find(".zanNum").attr("count");
+		//alert(zancount);
+		if (zan=="no") {
+			zancount++;			
+			$(this).attr("iszan","yes");
+			$(this).attr("title","取消赞");
+			$(this).find(".zanNum").attr("count",zancount);
+			$(this).find(".zanNum").html(zancount);
+		}
+		if(zan=="yes"){
+			zancount--;			
+			$(this).attr("iszan","no");
+			$(this).attr("title","赞");
+			$(this).find(".zanNum").attr("count",zancount);
+			$(this).find(".zanNum").html(zancount);
+		}
+		
+	});
 }

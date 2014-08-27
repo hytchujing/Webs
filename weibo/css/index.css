@@ -130,14 +130,16 @@ body{ color: #333; text-decoration: none;background-color: #6795a8; background-i
 .mainCenter4MainContent3{ width: 100%; min-height: 80px; padding-bottom: 15px; margin-bottom: 10px; position: relative; }
 .mainCenter4MainContent3 .smallPic{ cursor: url("images/big.cur"),auto;}
 .mainCenter4MainContent4{ width: 520px; height: 14px; position: absolute;bottom: 10; left:60;}
-.mainCenter4MainContent4Right{ width: 239px; height: 14px; float: right;}
-.mainCenter4MainContent4Left{ width: auto; height: 14px; float: left;}
+
+.mainCenter4MainContent4Left{ width: 260px; height: 14px; float: left;}
+.mainCenter4MainContent4Right{ width: 250px; height: 14px; float: right;margin-right: 10px; }
 .mainCenter4MainContent4 a,.mainCenter4MainContent2 a{ color: #0A8CD2; line-height: 13.5px; }
 .mainCenter4MainContent2 a{ font-size: 14px; line-height: 23px;}
-.mainCenter4MainContent4 span{ color: rgb(128, 128, 128); line-height: 13.5px;}
+.mainCenter4MainContent4 span{ color: #0A8CD2; line-height: 13.5px;}
+.mainCenter4MainContent4Left span{color: #666;} 
 /*.mainCenter4Main1{ height: 118px; *height: 129px;}*/
-#mainCenter4MainContent4RightSA{ display: block; width: auto; height: auto; float: left;}
-#mainCenter4MainContent4RightSA em{ display: block; float: left; width: 13px; height: 14px; background-image: url("images/icon.png"); background-position: -75px 0px;}
+.mainCenter4MainContent4RightSA{ display: block; width: auto; height: auto; float: left;}
+.mainCenter4MainContent4RightSA em{ display: block; float: left; width: 13px; height: 14px; background-image: url("images/icon.png"); background-position: -75px 0px;}
 .mainCenter4Main2{ height: 229px; *height: 240px;}
 .bigPic{ display: none; position: absolute; top: 0; left: 0; z-index: 2;}
 .bigPic img{ width: 400px; height: 500px; cursor: url("images/small.cur"),auto;}
@@ -171,92 +173,6 @@ body{ color: #333; text-decoration: none;background-color: #6795a8; background-i
 .mainCenter4MainCT3 a{ background-position: -75px -300px;}
 .mainCenter4MainCT4 a{ background-position: -100px -350px; margin-left: 6px; cursor: pointer;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*中间*/
 
 
@@ -285,25 +201,38 @@ body{ color: #333; text-decoration: none;background-color: #6795a8; background-i
 .S_func1{ color: #333;}
 .S_func1:hover{color: #0AB2ED;}
 
-
-
-
 /*右边*/
-
 
 /*主体内容  end*/
 
 
-
-
-
 /*底部相关*/
-.global_footer{ width: 940px; height: 175px; margin: 20px auto 0px; padding: 20px 20px 10px; background-image: url('images/footer_bg.png');
-	background-repeat: no-repeat;background-position: left bottom;}
+.global_footer{ width: 940px; height: auto; margin: 20px auto 0px; padding: 20px 20px 10px; background-image: url('images/footer_bg.png');background-repeat: no-repeat;background-position: left bottom;}
+.footerUL{width: 940px; height: 85px; margin-left: 10px;}
+.footerUL li{width: 165px; height: 85px; float: left;display: inline; margin: 0px 20px 0px 0px; color: #333; font-size: 12.5px; float: left;text-align: left;}
+.footerUL li span{ display:block; width: 165px; line-height: 30px;}
+.footerUL li a{display: inline;line-height: 20px;}
+.footerUL li a:hover{text-decoration: underline;}
+#footerULliA1{display:block;}
+#footerULliA2{display:block;}
+#footerULliA3{display:block;}
+#footerULliA4{display:block;}
+#footerULliA5{display:block;}
 
+.other_link{margin: 15px 0px 0px; border-top-width: 1px; border-top-style: solid; line-height: 0.5;}
+.S_line2{border-color: #e6e6e6;}
+.help_link{float: left;padding: 10px 0px 0px;}
+.help_link p{padding: 3px 0px 0px; line-height: 18px;}
+.help_link a{ margin-right: 10px;}
+.S_func1,.S_func1:hover{color: #333;}
+.W_ico16{width: 16px; height: 16px; display: inline-block;background-image: url('images/icon.png'); background-repeat: no-repeat;vertical-align: -2px; margin-right: 4px;}
+.ico_weibo{ background-position: -350px -125px;}
+.S_txt2{ color: #808080;}
 
-
-
+.copy{float: right;text-align: right;line-height: 20px; padding-top: 28px;}
+.W_linkb{padding-bottom: 2px;}
+.W_linkb select{margin-left: 5px;}
+.changeLanguage{}
 
 /*底部相关  end*/
 
