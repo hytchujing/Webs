@@ -55,12 +55,18 @@ p{margin: 14px 0px;}
 /*主体部分*/
 /*导航条*/
 .nav_helper{width: 100%; height: 40px; background-image: url('images/helper_nav_bg.png'); position: absolute; z-index: 100;left: 0px;border-bottom: 1px solid #383838;}
-
-
+.helper_container{width: auto;text-align: center;position: relative;margin: 0px auto;}
+.helper_logo{display: inline;font-family: Segoe UI;font-size: 27px;line-height: 40px;text-decoration: none;letter-spacing: 1px;float: left;width: 100px;margin-left: 180px;background: url('images/helper_logo.png') no-repeat scroll 0px 0px transparent;}
+#U_works{color: #E3BA36;display: inline-block;position: relative;height: 40px;float: right;}
+.menu_right{height: 40px;width: 400px;position: relative;margin-top: -3px; display: inline-block;}
+.menu_nav{height: 40px;width: 400px;position: relative;margin-top: 13px;}
+.arrowunderline li{float: left;display: inline-block;padding: 0px 14px;border-right: 1px solid #A6A3A3;font-size: 16px;font-weight: 600;text-decoration: none;text-align: center;}
+.arrowunderline li a{color:#D2D2D2;}
+.arrowunderline li a:hover{color:#D6B23E;}
 /*导航条未完成*/
 
 /*优米研发*/
-#tech{ width: 100%; height: 890px; background-image: url('images/tech_bg.png');position: relative;padding-bottom: 50px; top: 40px;}
+#tech{ width: 100%; height: 890px; background-image: url('images/tech_bg.png');position: relative;padding-bottom: 50px; top: -25px;top:0px\9;}
 h2{ margin: 26px 0px; font-size: 32px;color: #322828;font-weight: bold;letter-spacing: -3px;text-transform: uppercase;padding-top: 108px;padding-bottom: 11px;}
 h2 span{background-image: url('images/dot_bg2.png');background-repeat: repeat;background-position: left 13px;height: 12px;float: right;margin-top: 10px; margin-top: -20px\9; margin-left: 10px;width: 820px;}
 .tag{font-family: "PT Sans ",sans-serif;color: #656565;font-size: 17px;font-style: normal;line-height: 25px;padding-bottom: 30px;font-weight: normal;display: block;width: 990px;text-indent: 2em;text-align: left;position: relative;margin: 0px auto;}
@@ -121,10 +127,34 @@ h3 .font25{font-size: 0.9em;font-weight: 100;}
 .list_content .content{position: absolute;margin-left: 90px; margin-top: 18px;}
 .jobs_list li .word_tips{display: none; width: 149px;height: 149px;background: url('images/word_tip_bg.png') no-repeat scroll 0% 0% transparent;position: absolute;top: 10px;left: -135px;color: #E5E5E5;line-height: 145px;text-align: center;font-size: 19px;cursor: pointer;}
 
+#jobs .jobs_btn{ margin: 0px auto; position: relative;width: 100px; height: 100px;}
+#jobs .jobs_btn a{width: 100px; height: 100px; background: url('images/jobs_btn.png') no-repeat scroll 0% 0% transparent;cursor: pointer;}
+#jobs .jobs_btn a:hover{background: url('images/jobs_btn_hover.png') no-repeat scroll 0% 0% transparent;}
 
 
+/*联系我们*/
+.footer{width: 100%;background: url('images/footer_bg.png') repeat scroll 0% 0% transparent;letter-spacing: 0.1em;color: #D2D2C6;height: auto;text-shadow: 0px 1px 0px #000;margin-bottom: 0px;position: relative;clear: both;}
+.footer .content_part{height: 328px;}
+.column{float: left;height: auto;overflow: hidden;width: 300px;display: block;margin-right: 25px;line-height: 21px;}
+#col_1,#col_2{line-height: 29px;}
+.footer h3{background: url('images/h_line.png') repeat-x scroll center bottom transparent;text-align: left;padding-left: 10px;padding-bottom: 10px;color: #D0AD37;font-size: 1.8em;}
+.footer p{margin: -5px 0px;}
+.phoneNum{color: #d2c4a0;}
+#col_2 a{color: #D2D2C6;position: absolute;margin-top: 9px;text-decoration: underline;}
+#col_2 a:hover{color: #D6B23E;}
+#col_3{margin-top: 58px;width: 260px;float: right;line-height: 25px;height: 260px;}
+#col_3 span{float: left;width: 65px;height: 65px;line-height: 65px\9; font-size: 55px;top: 10px;position: relative;margin-right: 10px;}
 
+.exp{letter-spacing: 4px; font-size: 15px; margin-top: 20px\9;}
+.ser{margin-top: 30px;}
+.site_title{width: 25px;float: left;font-size: 22px;}
+.site_list{float: right;padding-right: 70px;margin-left: 55px;margin-left: 15px\9; position: absolute;}
+#col_3 a{color: #999;background: url('images/link_arrow.gif') no-repeat scroll 1px 9px transparent;padding-left: 14px;}
+#col_3 a:hover{color: #D6B23E;}
 
+.footer_end{bottom: 0px;position: relative;width: 100%;background: url('images/footer_end.png') repeat scroll 0% 0% transparent;height: 40px;line-height: 40px;color: #999;font-size: 13px;margin-top: 12px;text-align: center;}
+.footer_end span{float: left;left: 30%;position: relative;}
+.footer_end a{margin-top: 7px; margin-left: 10px;}
 
 
 
